@@ -21,6 +21,8 @@ class HelloControllerTest extends FlatSpec with BeforeAndAfter {
   var mockMvc: MockMvc = null
 
   "Hello Controller" should "give me greetings" in {
+    assert(mockMvc != null)
+    
     val result = mockMvc.perform(get("/"))
       .andExpect(status().isOk())
       .andReturn()
