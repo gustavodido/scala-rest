@@ -16,7 +16,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 class HelloControllerTest extends FlatSpec with BeforeAndAfter {
 
   @Autowired
-  var mockMvc: MockMvc = null
+  var mockMvc: MockMvc = _
 
   "Hello Controller" should "give me greetings" in {
     val result = mockMvc.perform(get("/test.html"))
