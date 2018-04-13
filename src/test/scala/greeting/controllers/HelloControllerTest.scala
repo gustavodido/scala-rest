@@ -17,11 +17,7 @@ class HelloControllerTest extends FlatSpec with BeforeAndAfter {
   @Autowired
   var mockMvc: MockMvc = null
 
-  @Autowired
-  var restTemplate: TestRestTemplate = null
-
   "Hello Controller" should "give me greetings" in {
-    assert(restTemplate != null)
     assert(mockMvc != null)
 
     val result = mockMvc.perform(get("/"))
