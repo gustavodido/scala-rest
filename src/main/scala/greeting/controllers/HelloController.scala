@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.{RequestMapping, RestController}
 @RestController
 class HelloController {
   @Autowired
-  var service: GreetingService = null
+  val service: GreetingService = null
 
   @RequestMapping(Array("/"))
   def index() = service.hello()
