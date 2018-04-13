@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class Application {
+class SpringBootScalaApplication {
 }
 
-object Application extends App {
-  SpringApplication.run(classOf[Application], args: _*)
+object SpringBootScalaApplication extends App {
+  SpringApplication.run(classOf[SpringBootScalaApplication], args: _*)
 }
